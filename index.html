@@ -6,12 +6,14 @@
 <title>The Complete Guide to Claude AI: Revolutionize The Way You Work</title>
 <style>
   :root{
-    --ink:#1a1a2e; --muted:#5a5a72; --line:#e7e7ef; --paper:#ffffff; --soft:#f6f5fb;
-    --accent:#EC4899; --accent-dark:#be2a72; --accent-soft:#fde7f2;
-    --steal:#7C3AED; --steal-soft:#f1ecfd; --maxw:880px;
+    --ink:#e9e9f3; --muted:#9a9ab6; --line:#2b2b3f; --paper:#0e0e16; --soft:#171723;
+    --surface:#1a1a28;
+    --accent:#EC4899; --accent-dark:#f472b6; --accent-soft:#3a1429;
+    --steal:#a78bfa; --steal-soft:#221a3a;
+    --cmd-bg:#11111c; --cmd-border:#382c5c; --cmd-text:#dcd2ff; --maxw:880px;
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;color-scheme:dark;}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px;}
   h1,h2,h3,h4{line-height:1.2;letter-spacing:-0.01em;}
@@ -24,12 +26,12 @@
   ul{margin:.5em 0 1em;padding-left:1.3em;}
   li{margin:.25em 0;}
   blockquote{margin:1.8em 0;padding:0 0 0 1.1em;border-left:4px solid var(--accent);
-    font-size:1.3rem;font-style:italic;color:#33334d;}
+    font-size:1.3rem;font-style:italic;color:#d3d3e6;}
   blockquote cite{display:block;margin-top:.5em;font-size:.85rem;font-style:normal;
     text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;}
 
   /* sticky top bar */
-  .topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(14,14,22,.92);
     backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
   .topbar-inner{max-width:1180px;margin:0 auto;padding:.55rem 1.2rem;display:flex;
     align-items:center;gap:1rem;flex-wrap:wrap;}
@@ -37,7 +39,7 @@
   .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);display:inline-block;}
   .dept-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-right:-.3rem;}
   .pills{display:flex;gap:.4rem;flex-wrap:wrap;flex:1;}
-  .pill{border:1px solid var(--line);background:#fff;color:var(--muted);
+  .pill{border:1px solid var(--line);background:var(--surface);color:var(--muted);
     padding:.3rem .75rem;border-radius:999px;font-size:.82rem;font-weight:600;cursor:pointer;
     transition:.15s;white-space:nowrap;}
   .pill:hover{border-color:var(--accent);color:var(--accent-dark);}
@@ -47,16 +49,16 @@
   .prompts-link:hover{background:var(--steal);color:#fff;}
 
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.2rem;}
-  .hero{background:linear-gradient(160deg,#fff 0%,var(--soft) 100%);
+  .hero{background:linear-gradient(160deg,var(--soft) 0%,var(--paper) 100%);
     border-bottom:1px solid var(--line);padding:3.4rem 0 2.6rem;}
   .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;font-weight:700;color:var(--accent-dark);margin-bottom:.6rem;}
-  .hero p.lead{font-size:1.25rem;color:#34344d;max-width:42rem;}
+  .hero p.lead{font-size:1.25rem;color:#c8c8de;max-width:42rem;}
   .cta-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem;}
   .btn{display:inline-block;padding:.7rem 1.3rem;border-radius:9px;font-weight:700;font-size:.95rem;
     text-decoration:none;cursor:pointer;border:2px solid var(--accent);}
   .btn-primary{background:var(--accent);color:#fff;}
   .btn-primary:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
-  .btn-ghost{background:#fff;color:var(--accent-dark);}
+  .btn-ghost{background:transparent;color:var(--accent-dark);}
   .btn-ghost:hover{background:var(--accent-soft);}
 
   /* table of contents */
@@ -68,19 +70,19 @@
 
   /* project cards */
   .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.2rem 0 1.5rem;}
-  .card{border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;background:#fff;}
+  .card{border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;background:var(--surface);}
   .card h4{margin:0 0 .5rem;color:var(--ink);text-transform:none;letter-spacing:0;font-size:1.02rem;}
   .card ul{margin:0;font-size:.93rem;color:var(--muted);}
 
   /* STEAL THIS box */
   .steal{border:2px dashed var(--steal);background:var(--steal-soft);border-radius:14px;
     padding:1.3rem 1.5rem;margin:1.6rem 0;}
-  .steal .tag{display:inline-block;background:var(--steal);color:#fff;font-size:.68rem;font-weight:800;
+  .steal .tag{display:inline-block;background:var(--steal);color:#1a1030;font-size:.68rem;font-weight:800;
     letter-spacing:.12em;text-transform:uppercase;padding:.25rem .6rem;border-radius:6px;margin-bottom:.7rem;}
   .steal h3{margin:.1rem 0 .6rem;font-size:1.2rem;}
-  .steal .cmd{background:#fff;border:1px solid #e3d9fb;border-radius:9px;padding:.8rem 1rem;
+  .steal .cmd{background:var(--cmd-bg);border:1px solid var(--cmd-border);border-radius:9px;padding:.8rem 1rem;
     font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;font-size:.86rem;
-    color:#2c1f4a;white-space:pre-wrap;margin:.5rem 0 .9rem;}
+    color:var(--cmd-text);white-space:pre-wrap;margin:.5rem 0 .9rem;}
   .steal .grp{margin:.7rem 0;}
   .steal .grp b{display:block;font-size:.92rem;margin-bottom:.15rem;}
   .steal ul{margin:.2rem 0;font-size:.9rem;}
@@ -93,7 +95,7 @@
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0;}
   .pillars .card h4{color:var(--accent-dark);}
 
-  .midcta{background:var(--ink);color:#fff;border-radius:16px;padding:2rem 2rem;margin:3rem 0;text-align:center;}
+  .midcta{background:linear-gradient(135deg,#1f1535 0%,#241129 100%);border:1px solid var(--steal-soft);color:#fff;border-radius:16px;padding:2rem 2rem;margin:3rem 0;text-align:center;}
   .midcta h3{margin:.2rem 0 .5rem;color:#fff;}
   .midcta p{color:#c9c9da;max-width:34rem;margin:.4rem auto 1.2rem;}
 
@@ -105,7 +107,7 @@
   body.show-prompts #prompts-view{display:block;}
   body.show-prompts > footer{display:none;}
   .prompt-card{border:1px solid var(--line);border-left:4px solid var(--steal);border-radius:10px;
-    padding:1.1rem 1.3rem;margin:1.1rem 0;background:#fff;}
+    padding:1.1rem 1.3rem;margin:1.1rem 0;background:var(--surface);}
   .prompt-card .n{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--steal);}
   .prompt-card .said{font-size:1.08rem;font-weight:600;margin:.3rem 0 .5rem;}
   .prompt-card .did{font-size:.92rem;color:var(--muted);}
