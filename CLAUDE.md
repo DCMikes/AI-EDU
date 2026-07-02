@@ -2,14 +2,7 @@
 
 Session color: #EC4899 (pink)
 
-AI education project.
-
-## What we're building
-
-The first thing we're building is based on this site:
-**https://offers.hubspot.com/view/claude-ai-at-work**
-
-(Original link arrived via a HubSpot marketing email — "Claude AI at Work" offer page. Tracking/UTM params stripped above.)
+Fresh start — previous Claude-guide site content was removed 2026-07-02 (recoverable in git history before that date).
 
 ## Notes
 
