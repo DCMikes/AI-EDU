@@ -9,7 +9,7 @@ Claude trainings for the Dental Crafters Network team.
 
 - Static site only: no build step, no dependencies. `index.html` renders the
   topic list from `assets/js/topics.js`.
-- Every topic page uses the Why / How / When structure from
+- Every topic page uses the Why / How / Prompts structure from
   `topics/_template.html` and carries a written date, updated date, and
   content version; the same metadata lives in its `topics.js` entry.
 - Branding follows the `brand-dcn` skill (DentalCrafters/skills repo):

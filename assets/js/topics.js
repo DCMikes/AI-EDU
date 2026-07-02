@@ -49,11 +49,11 @@ const TOPICS = [
     audience: "intermediate",
     written: "2026-07-02",
     updated: "2026-07-02",
-    version: "1.1",
+    version: "1.2",
     summary:
       "DCN's brand skill is already installed for everyone; this page shows " +
       "how to leverage it. Lead any request with /brand-dcn to draft, fix, " +
-      "or brand-check work, and know when to reach for it (and when not to).",
+      "or brand-check work, with ready-to-use prompt examples.",
   },
   {
     title: "Configuring and Using the Microsoft 365 Connector",
@@ -62,11 +62,11 @@ const TOPICS = [
     audience: "intermediate",
     written: "2026-07-02",
     updated: "2026-07-02",
-    version: "1.0",
+    version: "1.1",
     summary:
       "Connect Claude to Outlook, SharePoint, OneDrive, and Teams so it can " +
       "find your emails, files, and chats itself. Covers the two-minute " +
-      "account setup, everyday search prompts, and the read-only boundaries.",
+      "account setup, ready-to-use prompt examples, and the read-only limits.",
   },
 ];
 

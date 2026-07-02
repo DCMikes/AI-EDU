@@ -2,7 +2,7 @@
 
 A living internal training site: one-page Claude trainings for the Dental
 Crafters Network team, published on GitHub Pages. Each topic is a single page
-with three sections (Why / How / When), and the landing page lists every
+with three sections (Why / How / Prompts), and the landing page lists every
 topic with an audience rating (beginner / intermediate / advanced), its
 written date, last-updated date, and content version so people can catch
 up on anything they missed. The list sorts by audience level first, then
@@ -21,7 +21,7 @@ with the link can open it; do not put confidential material here.
 ```
 index.html                # landing page; renders the topic list
 topics/_template.html     # copy this to start a new topic page
-topics/<topic>.html       # one page per topic (Why / How / When)
+topics/<topic>.html       # one page per topic (Why / How / Prompts)
 assets/js/topics.js       # the topic registry the landing page renders
 assets/css/site.css       # DCN brand palette, fonts, layout
 assets/logos/             # DCN logo SVGs (horizontal white-text, icon)
@@ -32,7 +32,7 @@ robots.txt                # Disallow: / (keep out of search)
 ## Adding a topic
 
 1. Copy `topics/_template.html` to `topics/<your-topic>.html` and fill in
-   the TODOs: title, dates, version, and the Why / How / When sections.
+   the TODOs: title, dates, version, and the Why / How / Prompts sections.
 2. Add an entry to the `TOPICS` array in `assets/js/topics.js` (title,
    href, audience, written, updated, version, summary). Sorting is
    automatic: audience level, then release date.

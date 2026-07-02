@@ -26,7 +26,7 @@
   <h1>Configuring and Using the Microsoft 365 Connector</h1>
   <div class="page-meta">
     <span>Written July 2, 2026</span>
-    <span>v1.0</span>
+    <span>v1.1</span>
   </div>
 
   <p class="lede">
@@ -42,7 +42,7 @@
     <h2>Why you would use this</h2>
     <p>
       Most of what we know as a company lives in Microsoft 365: email
-      threads with doctors, SOPs and working documents on SharePoint, files
+      threads with doctors, working documents on SharePoint, files
       on OneDrive, and day-to-day conversation in Teams. Without the
       connector, getting that context into Claude means hunting it down and
       pasting it in by hand. With the connector, Claude searches for it the
@@ -105,24 +105,27 @@
     </p>
   </section>
 
-  <p class="section-label">When</p>
+  <p class="section-label">Prompts</p>
   <section class="whw">
-    <h2>When you might use it</h2>
-    <ul>
-      <li>Summarizing a long email thread before you reply</li>
-      <li>Finding a document when you remember roughly what it said but not
-        where it lives</li>
-      <li>Prepping for a meeting: pulling the related emails, files, and
-        calendar details together in one ask</li>
-      <li>Checking availability and finding meeting times with coworkers</li>
-      <li>Catching up on a Teams conversation you missed</li>
-      <li>Pulling facts from an SOP or working doc into something you are
-        writing</li>
-    </ul>
+    <h2>Three prompts to try</h2>
+    <ol>
+      <li>
+        <em>"Find the email thread with Dr. Hansen about the implant case,
+        summarize where things stand, and draft a reply for my review."</em>
+      </li>
+      <li>
+        <em>"Search the Marketing SharePoint for the trade show checklist
+        and pull out the deadlines I need to hit this month."</em>
+      </li>
+      <li>
+        <em>"Look at my calendar and Sarah's for next week and suggest
+        three times that work for a 30 minute case review."</em>
+      </li>
+    </ol>
     <p>
-      And a few boundaries worth knowing. The connector is read-only, so
-      sending the email or editing the file is still your job; Claude drafts,
-      you send. Brand assets are the one exception to "just search
+      A few boundaries worth knowing as you go. The connector is read-only,
+      so sending the email or editing the file is still your job; Claude
+      drafts, you send. Brand assets are the one exception to "just search
       SharePoint": logos, templates, and boilerplate should come from the
       brand-dcn skill (see
       <a href="access-brand-dcn.html">Accessing the brand-dcn Skill and
