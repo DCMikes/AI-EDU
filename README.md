@@ -3,8 +3,10 @@
 A living internal training site: one-page Claude trainings for the Dental
 Crafters Network team, published on GitHub Pages. Each topic is a single page
 with three sections (Why / How / When), and the landing page lists every
-topic with its written date, last-updated date, and content version so
-people can catch up on anything they missed.
+topic with an audience rating (beginner / intermediate / advanced), its
+written date, last-updated date, and content version so people can catch
+up on anything they missed. The list sorts by audience level first, then
+by release date, newest first.
 
 ## Live site
 
@@ -31,8 +33,9 @@ robots.txt                # Disallow: / (keep out of search)
 
 1. Copy `topics/_template.html` to `topics/<your-topic>.html` and fill in
    the TODOs: title, dates, version, and the Why / How / When sections.
-2. Add an entry at the **top** of the `TOPICS` array in
-   `assets/js/topics.js` (title, href, written, updated, version, summary).
+2. Add an entry to the `TOPICS` array in `assets/js/topics.js` (title,
+   href, audience, written, updated, version, summary). Sorting is
+   automatic: audience level, then release date.
 3. Push to `main`; GitHub Pages republishes automatically.
 
 External resources (like Anthropic Academy courses) go straight into
