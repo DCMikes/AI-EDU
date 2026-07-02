@@ -26,15 +26,17 @@
   <h1>Accessing the brand-dcn Skill and Plugin</h1>
   <div class="page-meta">
     <span>Written July 2, 2026</span>
-    <span>v1.0</span>
+    <span>v1.1</span>
     <span>Covers brand-dcn plugin 1.0.0</span>
   </div>
 
   <p class="lede">
     brand-dcn puts our brand voice and the full marketing asset library
-    inside Claude. With it installed, anything you write for doctors and
-    their teams comes out sounding like one company, with the right colors,
-    logos, fonts, and boilerplate already in hand.
+    inside Claude, and it is already installed for everyone; IT publishes
+    it to the whole team automatically. This page is about putting it to
+    work: anything you write for doctors and their teams comes out
+    sounding like one company, with the right colors, logos, fonts, and
+    boilerplate already in hand.
   </p>
 
   <p class="section-label">Why</p>
@@ -61,43 +63,58 @@
   <p class="section-label">How</p>
   <section class="whw">
     <h2>How you set it up and use it</h2>
-    <p><strong>Getting it installed</strong></p>
+    <p><strong>There is no setup</strong></p>
+    <p>
+      brand-dcn is published to the whole team through our internal plugin
+      catalog and installs on its own, so you should already have it. If
+      you want to confirm, just ask Claude
+      <em>"do you have the brand-dcn skill?"</em> In the rare case it is
+      missing, contact IT and we will sort out your access.
+    </p>
+    <p><strong>Calling it with /brand-dcn</strong></p>
+    <p>
+      The most direct way to leverage the skill is to lead your request
+      with the slash command. Typing <code>/brand-dcn</code> loads the full
+      brand context (voice rules, colors, logos, boilerplate, templates)
+      before Claude starts writing, so the first draft lands on-brand
+      instead of needing a rewrite. A few patterns worth stealing:
+    </p>
     <ol>
       <li>
-        brand-dcn is distributed through our internal plugin catalog in
-        Claude, managed by IT. For most of the team it installs
-        automatically, so start by checking: open Claude and ask it
-        <em>"do you have the brand-dcn skill?"</em>
+        <strong>Draft something new:</strong>
+        <em>"/brand-dcn write a follow-up email to Dr. Miller about her
+        first digital case"</em> or
+        <em>"/brand-dcn draft a social post promoting the August CE
+        event."</em>
       </li>
       <li>
-        If it is not there, open your Claude settings, find
-        <strong>Plugins</strong> (or Capabilities), and look for
-        <strong>brand-dcn</strong> in the <strong>dentalcrafters</strong>
-        catalog. Install it from there.
+        <strong>Fix something existing:</strong> paste or attach a draft
+        and ask <em>"/brand-dcn review this and bring it on-brand."</em>
+        Claude will flag and fix off-voice wording, banned phrases, wrong
+        logos, and off-palette colors, and summarize what it changed.
       </li>
       <li>
-        If you do not see the catalog at all, contact IT and we will sort
-        out your access.
+        <strong>Ask brand questions:</strong>
+        <em>"/brand-dcn which logo goes on a dark slide?"</em> or
+        <em>"/brand-dcn what are our exact hex colors?"</em> It answers
+        from the bundled guidelines rather than memory.
+      </li>
+      <li>
+        <strong>Build from templates:</strong>
+        <em>"/brand-dcn start a one-pager from our letterhead about our
+        implant workflow."</em> The skill carries the PowerPoint and
+        letterhead templates and the fonts to go with them.
       </li>
     </ol>
-    <p><strong>Using it day to day</strong></p>
-    <ol>
-      <li>
-        Most of the time you do nothing special. When you ask Claude to
-        write or review anything doctor facing or customer facing, the
-        skill triggers on its own and applies the brand rules.
-      </li>
-      <li>
-        You can also call it directly: type <code>/brand-dcn</code>, or ask
-        in plain language, for example <em>"make this on-brand"</em> or
-        <em>"rewrite this in our voice."</em>
-      </li>
-      <li>
-        Ask it brand questions too: which logo to use on a dark slide, our
-        exact hex colors, the tagline, or the About Us boilerplate. It
-        answers from the bundled guidelines rather than memory.
-      </li>
-    </ol>
+    <p><strong>It also triggers on its own</strong></p>
+    <p>
+      You do not have to remember the command. When you ask Claude to
+      write or review anything doctor facing or customer facing, the skill
+      activates automatically, and plain language works too:
+      <em>"make this on-brand"</em> or <em>"rewrite this in our voice."</em>
+      The slash command is simply the surest way to point Claude at the
+      brand from the very first word.
+    </p>
     <p><strong>Staying current</strong></p>
     <p>
       Marketing owns the master files and ships updates as new plugin

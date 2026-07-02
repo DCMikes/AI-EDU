@@ -49,11 +49,11 @@ const TOPICS = [
     audience: "intermediate",
     written: "2026-07-02",
     updated: "2026-07-02",
-    version: "1.0",
+    version: "1.1",
     summary:
-      "How to get DCN's brand skill in Claude and put it to work: why it " +
-      "keeps every doctor-facing piece in one voice, how to check it is " +
-      "installed and trigger it, and when to reach for it (and when not to).",
+      "DCN's brand skill is already installed for everyone; this page shows " +
+      "how to leverage it. Lead any request with /brand-dcn to draft, fix, " +
+      "or brand-check work, and know when to reach for it (and when not to).",
   },
   {
     title: "Configuring and Using the Microsoft 365 Connector",
