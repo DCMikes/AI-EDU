@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Configuring and Using the Microsoft 365 Connector | Claude Training Hub | Dental Crafters Network</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/dcn-color-icon.svg">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="Dental Crafters Network home">
+      <img src="../assets/logos/dcn-color-horizontal-white-text.svg" alt="Dental Crafters Network">
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="kicker">Claude Training</p>
+  <h1>Configuring and Using the Microsoft 365 Connector</h1>
+  <div class="page-meta">
+    <span>Written July 2, 2026</span>
+    <span>v1.0</span>
+  </div>
+
+  <p class="lede">
+    The Microsoft 365 connector lets Claude search your Outlook mail and
+    calendar, SharePoint, OneDrive, and Teams chats. Instead of copying and
+    pasting content into the chat, you can ask Claude to go find the email,
+    file, or conversation itself. It is built on MCP (Model Context
+    Protocol), the standard Claude uses to talk to outside tools.
+  </p>
+
+  <p class="section-label">Why</p>
+  <section class="whw">
+    <h2>Why you would use this</h2>
+    <p>
+      Most of what we know as a company lives in Microsoft 365: email
+      threads with doctors, SOPs and working documents on SharePoint, files
+      on OneDrive, and day-to-day conversation in Teams. Without the
+      connector, getting that context into Claude means hunting it down and
+      pasting it in by hand. With the connector, Claude searches for it the
+      same way you would, then works with what it finds.
+    </p>
+    <p>
+      Two properties make this safe to lean on. Access is
+      <strong>read-only</strong>: Claude can search and read, but it cannot
+      send email, edit or delete files, or change anything in Teams or
+      SharePoint. And it <strong>mirrors your own permissions</strong>:
+      Claude can only see what your Microsoft account can already see,
+      nothing more.
+    </p>
+  </section>
+
+  <p class="section-label">How</p>
+  <section class="whw">
+    <h2>How you set it up and use it</h2>
+    <p><strong>One-time setup (about two minutes)</strong></p>
+    <p>
+      IT has already done the organization-level work (adding the connector
+      for our tenant and granting admin consent), so you only need to
+      connect your own account:
+    </p>
+    <ol>
+      <li>In Claude, open <strong>Settings</strong>, then
+        <strong>Connectors</strong>.</li>
+      <li>Find <strong>Microsoft 365</strong> and click
+        <strong>Connect</strong>.</li>
+      <li>Sign in with your work account (your
+        <strong>@dentalcrafters.net</strong> address). Personal Microsoft
+        accounts will not work here.</li>
+      <li>Approve the access prompt. That is it; the connector stays linked
+        until you disconnect it.</li>
+    </ol>
+    <p><strong>Using it day to day</strong></p>
+    <ol>
+      <li>
+        Ask in plain language and name the source when you know it:
+        <em>"find the email thread with Dr. Smith about the bridge case,"</em>
+        <em>"search the Marketing SharePoint for the trade show checklist,"</em>
+        <em>"what is on my calendar Thursday,"</em> or
+        <em>"find a meeting time that works for me and Sarah next week."</em>
+      </li>
+      <li>
+        The first time Claude uses a given tool (say, Teams chat search) it
+        may ask your approval. Approving once is normal; it is the
+        connector working as designed.
+      </li>
+      <li>
+        Combine it with other skills: for example, ask Claude to find last
+        month's event recap email and turn it into an on-brand social post.
+      </li>
+    </ol>
+    <p><strong>If something is not working</strong></p>
+    <p>
+      If Microsoft 365 does not appear in your Connectors list, the sign-in
+      loops, or a search that should work comes back empty, contact IT and
+      we will straighten out your access.
+    </p>
+  </section>
+
+  <p class="section-label">When</p>
+  <section class="whw">
+    <h2>When you might use it</h2>
+    <ul>
+      <li>Summarizing a long email thread before you reply</li>
+      <li>Finding a document when you remember roughly what it said but not
+        where it lives</li>
+      <li>Prepping for a meeting: pulling the related emails, files, and
+        calendar details together in one ask</li>
+      <li>Checking availability and finding meeting times with coworkers</li>
+      <li>Catching up on a Teams conversation you missed</li>
+      <li>Pulling facts from an SOP or working doc into something you are
+        writing</li>
+    </ul>
+    <p>
+      And a few boundaries worth knowing. The connector is read-only, so
+      sending the email or editing the file is still your job; Claude drafts,
+      you send. Brand assets are the one exception to "just search
+      SharePoint": logos, templates, and boilerplate should come from the
+      brand-dcn skill (see
+      <a href="access-brand-dcn.html">Accessing the brand-dcn Skill and
+      Plugin</a>) so everyone stays on the same released version. And as
+      always, keep patient-identifiable information out of prompts and
+      follow our data handling policies.
+    </p>
+  </section>
+
+  <div class="callout">
+    Questions or something out of date on this page? Tell IT and we will
+    update it and bump the version.
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Dental Crafters Network, internal training. Shared by link only.</span>
+    <span>Where Every Smile Changes a Life.</span>
+  </div>
+</footer>
+
+</body>
+</html>

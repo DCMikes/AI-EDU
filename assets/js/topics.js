@@ -15,6 +15,18 @@
 
 const TOPICS = [
   {
+    title: "Configuring and Using the Microsoft 365 Connector",
+    href: "topics/microsoft-365-connector.html",
+    external: false,
+    written: "2026-07-02",
+    updated: "2026-07-02",
+    version: "1.0",
+    summary:
+      "Connect Claude to Outlook, SharePoint, OneDrive, and Teams so it can " +
+      "find your emails, files, and chats itself. Covers the two-minute " +
+      "account setup, everyday search prompts, and the read-only boundaries.",
+  },
+  {
     title: "Accessing the brand-dcn Skill and Plugin",
     href: "topics/access-brand-dcn.html",
     external: false,
