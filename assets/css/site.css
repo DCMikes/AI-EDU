@@ -161,14 +161,23 @@ hr {
 }
 
 .topic-card {
+  position: relative;
   background: var(--cobalt);
   border: 1px solid rgba(110, 115, 120, 0.35);
   border-radius: 8px;
   padding: 0.75rem 1.1rem;
   transition: border-color 0.15s ease;
+  cursor: pointer;
 }
 
 .topic-card:hover { border-color: var(--biolime); }
+
+/* Stretch the title link over the whole card so the full box is clickable */
+.topic-card h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
 
 .topic-card .row {
   display: flex;
@@ -235,7 +244,8 @@ hr {
   text-decoration: none;
 }
 
-.topic-card h3 a:hover { color: var(--biolime); }
+.topic-card h3 a:hover,
+.topic-card:hover h3 a { color: var(--biolime); }
 
 .topic-card p {
   margin: 0.25rem 0 0;
