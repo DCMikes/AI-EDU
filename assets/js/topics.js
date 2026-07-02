@@ -15,6 +15,18 @@
 
 const TOPICS = [
   {
+    title: "Accessing the brand-dcn Skill and Plugin",
+    href: "topics/access-brand-dcn.html",
+    external: false,
+    written: "2026-07-02",
+    updated: "2026-07-02",
+    version: "1.0",
+    summary:
+      "How to get DCN's brand skill in Claude and put it to work: why it " +
+      "keeps every doctor-facing piece in one voice, how to check it is " +
+      "installed and trigger it, and when to reach for it (and when not to).",
+  },
+  {
     title: "Claude 101",
     href: "https://anthropic.skilljar.com/claude-101",
     external: true,
