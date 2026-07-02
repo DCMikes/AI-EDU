@@ -1,0 +1,299 @@
+/* DCN Claude Training Hub — brand stylesheet
+   Palette and type per DCN Brand Guidelines (brand-dcn skill).
+   Adelle Sans and Microgramma are internal-only licensed fonts and are not
+   bundled in this public repo; system stacks stand in for them. */
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  /* DCN brand palette */
+  --obsidian: #111111;   /* primary dark background (dominant) */
+  --cobalt: #0A2540;     /* headers, footers, panels */
+  --chrome: #6E7378;     /* secondary type, dividers */
+  --titanium: #F8F9FA;   /* body text on dark, light backgrounds */
+  --biolime: #B7FF00;    /* high-energy accent: links, interactive */
+  --mint: #C8FFE6;       /* soft highlight panels */
+  --dc-blue: #64CBE8;    /* Dental Crafters sub-brand */
+
+  --font-head: "Space Grotesk", "Segoe UI", Arial, sans-serif;
+  --font-body: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  --maxw: 60rem;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--obsidian);
+  color: var(--titanium);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+/* ---------- Header / nav ---------- */
+
+.site-header {
+  background: var(--cobalt);
+  border-bottom: 1px solid rgba(110, 115, 120, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header .inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-header .logo img {
+  height: 2.1rem;
+  display: block;
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.site-nav a {
+  color: var(--titanium);
+  text-decoration: none;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--biolime);
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.kicker {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--biolime);
+  margin: 0 0 0.6rem;
+}
+
+h1 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--titanium);
+}
+
+h2 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0.8rem;
+  color: var(--titanium);
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--titanium);
+  max-width: 44rem;
+}
+
+a { color: var(--biolime); }
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(110, 115, 120, 0.35);
+  margin: 2.5rem 0;
+}
+
+/* ---------- Topic list (landing page) ---------- */
+
+.topic-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.topic-card {
+  background: var(--cobalt);
+  border: 1px solid rgba(110, 115, 120, 0.35);
+  border-radius: 10px;
+  padding: 1.3rem 1.5rem;
+  transition: border-color 0.15s ease;
+}
+
+.topic-card:hover { border-color: var(--biolime); }
+
+.topic-card .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--chrome);
+  margin-bottom: 0.45rem;
+  font-family: var(--font-head);
+  letter-spacing: 0.04em;
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(183, 255, 0, 0.12);
+  color: var(--biolime);
+}
+
+.badge.external {
+  background: rgba(100, 203, 232, 0.14);
+  color: var(--dc-blue);
+}
+
+.topic-card h3 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0 0 0.4rem;
+}
+
+.topic-card h3 a {
+  color: var(--titanium);
+  text-decoration: none;
+}
+
+.topic-card h3 a:hover { color: var(--biolime); }
+
+.topic-card p {
+  margin: 0;
+  color: var(--titanium);
+  opacity: 0.9;
+  font-size: 0.97rem;
+}
+
+/* ---------- Topic pages: Why / How / When ---------- */
+
+.page-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  align-items: center;
+  font-family: var(--font-head);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--chrome);
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--biolime);
+  margin: 2.6rem 0 0.2rem;
+}
+
+section.whw {
+  background: var(--cobalt);
+  border: 1px solid rgba(110, 115, 120, 0.35);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  margin: 0.6rem 0 0;
+}
+
+section.whw h2 { margin-top: 0; }
+
+.callout {
+  background: var(--mint);
+  color: var(--obsidian);
+  border-radius: 10px;
+  padding: 1rem 1.3rem;
+  margin: 1.5rem 0;
+}
+
+.callout a { color: var(--cobalt); font-weight: 600; }
+
+code, pre {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.92em;
+}
+
+pre {
+  background: #0b1520;
+  border: 1px solid rgba(110, 115, 120, 0.35);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: var(--cobalt);
+  border-top: 1px solid rgba(110, 115, 120, 0.35);
+  margin-top: 2rem;
+}
+
+.site-footer .inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.4rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--chrome);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.9rem; }
+  .site-header .inner { flex-wrap: wrap; gap: 0.6rem 1rem; }
+  .site-nav { margin-left: 0; }
+}
