@@ -48,8 +48,8 @@ const TOPICS = [
     external: false,
     audience: "intermediate",
     written: "2026-07-02",
-    updated: "2026-07-02",
-    version: "1.2",
+    updated: "2026-07-13",
+    version: "1.3",
     summary:
       "DCN's brand skill is already installed for everyone; this page shows " +
       "how to leverage it. Lead any request with /brand-dcn to draft, fix, " +
