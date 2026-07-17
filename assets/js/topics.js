@@ -43,6 +43,19 @@ const TOPICS = [
       "effective, efficient, and safe collaboration with AI tools.",
   },
   {
+    title: "Ways to Use Claude: Chat, Cowork, Code, the CLI, and Office Plugins",
+    href: "topics/claude-interfaces.html",
+    external: false,
+    audience: "beginner",
+    written: "2026-07-17",
+    updated: "2026-07-17",
+    version: "1.0",
+    summary:
+      "The same Claude, five different doorways. Why you would pick Chat, " +
+      "Cowork, Claude Code, the Code CLI, or the Office plugins, and where " +
+      "each one stops, including why Cowork only syncs with cloud files.",
+  },
+  {
     title: "Skills, Plugins, Connectors, Extensions, and MCP Servers: How They Fit Together",
     href: "topics/skills-plugins-connectors-mcp.html",
     external: false,
