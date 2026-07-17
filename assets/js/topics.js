@@ -43,13 +43,26 @@ const TOPICS = [
       "effective, efficient, and safe collaboration with AI tools.",
   },
   {
+    title: "Skills, Plugins, Connectors, Extensions, and MCP Servers: How They Fit Together",
+    href: "topics/skills-plugins-connectors-mcp.html",
+    external: false,
+    audience: "intermediate",
+    written: "2026-07-17",
+    updated: "2026-07-17",
+    version: "1.0",
+    summary:
+      "Five add-on names that sound alike and are not. One-line definitions " +
+      "of skills, plugins, connectors, extensions, and MCP servers, how they " +
+      "stack together, and which one to ask for when, with DCN examples.",
+  },
+  {
     title: "Claude Skills: What They Are and How to Make One",
     href: "topics/claude-skills.html",
     external: false,
     audience: "intermediate",
     written: "2026-07-17",
     updated: "2026-07-17",
-    version: "1.0",
+    version: "1.1",
     summary:
       "A skill is a saved set of instructions that teaches Claude to do a " +
       "job your way, every time. Covers how skills activate, how to build " +

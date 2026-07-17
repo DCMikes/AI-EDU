@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Skills, Plugins, Connectors, Extensions, and MCP Servers | Claude Training Hub | Dental Crafters Network</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/dcn-color-icon.svg">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="Dental Crafters Network home">
+      <img src="../assets/logos/dcn-color-horizontal-white-text.svg" alt="Dental Crafters Network">
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="kicker">Claude Training</p>
+  <h1>Skills, Plugins, Connectors, Extensions, and MCP Servers: How They Fit Together</h1>
+  <div class="page-meta">
+    <span>Written July 17, 2026</span>
+    <span>Updated July 17, 2026</span>
+    <span>v1.0</span>
+  </div>
+
+  <p class="lede">
+    Claude's add-ons come with five names that sound interchangeable and
+    are not: skills, plugins, connectors, extensions, and MCP servers.
+    This page gives you a one-line definition of each, shows how they
+    stack together, and points each one at real examples we already use
+    at DCN.
+  </p>
+
+  <p class="section-label">Why</p>
+  <section class="whw">
+    <h2>Why you would use this</h2>
+    <p>
+      The shortest way to keep them straight is to split them by what they
+      add. Two of these give Claude <strong>knowledge</strong>: how to do a
+      job, what steps to follow, how we word things. The other three give
+      Claude <strong>reach</strong>: access to systems it could not touch
+      on its own, like your email or LabTrac. Once you know which kind of
+      problem you have, you know which piece you need, and you can ask IT
+      for the right thing instead of "some AI thing that does X."
+    </p>
+    <p>Here is each one in a line:</p>
+    <ol>
+      <li>
+        <strong><a href="claude-skills.html">Skill</a></strong> (knowledge):
+        a folder of saved instructions, plus any templates or reference
+        files, that teaches Claude how to do a specific job your way.
+        Ours: <a href="access-brand-dcn.html">brand-dcn</a>, which carries
+        our voice rules and brand assets. Covered in depth on the
+        <a href="claude-skills.html">skills training page</a>.
+      </li>
+      <li>
+        <strong>MCP server</strong> (reach): a program that speaks the
+        Model Context Protocol, an open standard that lets Claude safely
+        use outside tools and data. It is the plumbing underneath
+        everything in the "reach" family. Ours: FETCH, the read-only
+        service that lets Claude answer questions from LabTrac case data.
+      </li>
+      <li>
+        <strong>Connector</strong> (reach): the friendly, packaged form of
+        an MCP server inside the Claude apps. You turn one on from a
+        settings menu, sign in, and Claude gains those tools; no technical
+        setup. Ours: the
+        <a href="microsoft-365-connector.html">Microsoft 365 connector</a>
+        for Outlook, SharePoint, OneDrive, and Teams.
+      </li>
+      <li>
+        <strong>Extension</strong> (reach): a one-click install file that
+        packages an MCP server to run on your own computer, used by Claude
+        Desktop. Same idea as a connector, but the tools run locally on
+        your machine instead of in the cloud. The Claude for Chrome
+        browser extension is a cousin: it gives Claude reach into your
+        browser.
+      </li>
+      <li>
+        <strong>Plugin</strong> (packaging): a bundle used to distribute
+        the other pieces to a whole team at once. One plugin can carry
+        skills, slash commands, and MCP server connections together.
+        Ours: the brand-dcn plugin, which is how the brand-dcn skill
+        reaches every DCN machine automatically.
+      </li>
+    </ol>
+  </section>
+
+  <p class="section-label">How</p>
+  <section class="whw">
+    <h2>How they interconnect</h2>
+    <p>
+      These are not five rival options; they stack. The interconnections
+      are the part worth remembering:
+    </p>
+    <ol>
+      <li>
+        <strong>A skill can be part of a plugin.</strong> The skill is the
+        content; the plugin is the box it ships in. brand-dcn is exactly
+        this: you experience it as a
+        <a href="claude-skills.html">skill</a>, and IT delivers it as a
+        plugin through our internal catalog.
+      </li>
+      <li>
+        <strong>Connectors and extensions are both MCP servers in nicer
+        clothes.</strong> A connector is an MCP server hosted in the cloud
+        and switched on from settings; an extension is an MCP server
+        installed on your own machine. Under the hood, the
+        <a href="microsoft-365-connector.html">Microsoft 365 connector</a>
+        and our FETCH service speak the same protocol.
+      </li>
+      <li>
+        <strong>A plugin can also carry MCP connections.</strong> Besides
+        skills, a plugin can include the configuration that points Claude
+        at an MCP server, so one install gives a teammate both the
+        know-how and the access.
+      </li>
+      <li>
+        <strong>Skills and MCP servers are better together.</strong> The
+        MCP server provides the tools; a skill teaches Claude how to use
+        them well. Our FETCH setup works this way: the server exposes
+        LabTrac data, and a companion skill tells Claude which questions
+        map to which queries and what the numbers mean.
+      </li>
+      <li>
+        <strong>What stacks on what:</strong> MCP servers are the
+        foundation of reach; connectors and extensions are two ways to
+        plug them in; skills sit on top adding judgment and process; and
+        plugins wrap any of it for team-wide delivery.
+      </li>
+    </ol>
+    <p>
+      A practical rule of thumb: if Claude keeps doing a task the wrong
+      way, you want a <a href="claude-skills.html">skill</a>. If Claude
+      cannot see the data at all, you want a connector, an extension, or
+      an MCP server. If the whole team needs either one, ask IT about a
+      plugin.
+    </p>
+  </section>
+
+  <p class="section-label">Prompts</p>
+  <section class="whw">
+    <h2>Three prompts to try</h2>
+    <ol>
+      <li>
+        <em>"What skills, connectors, and MCP tools do you have available
+        in this chat right now? Group them by which system they reach."</em>
+      </li>
+      <li>
+        <em>"I want you to pull numbers from LabTrac and format them the
+        way our morning huddle expects. Which parts of that need a
+        connector and which parts need a skill?"</em>
+      </li>
+      <li>
+        <em>"Explain what the brand-dcn plugin contains and what would be
+        different if it were only a skill on my machine."</em>
+      </li>
+    </ol>
+    <p>
+      One boundary worth knowing: connectors, extensions, and MCP servers
+      grant real access to real systems, so at DCN those are set up or
+      approved by IT. Skills are safe to experiment with on your own, and
+      the <a href="claude-skills.html">skills page</a> shows you how.
+    </p>
+  </section>
+
+  <div class="callout">
+    Questions or something out of date on this page? Tell IT and we will
+    update it and bump the version.
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Dental Crafters Network, internal training. Shared by link only.</span>
+    <span>Where Every Smile Changes a Life.</span>
+  </div>
+</footer>
+
+</body>
+</html>
