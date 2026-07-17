@@ -27,7 +27,7 @@
   <div class="page-meta">
     <span>Written July 17, 2026</span>
     <span>Updated July 17, 2026</span>
-    <span>v1.0</span>
+    <span>v1.1</span>
   </div>
 
   <p class="lede">
@@ -50,6 +50,133 @@
       problem you have, you know which piece you need, and you can ask IT
       for the right thing instead of "some AI thing that does X."
     </p>
+
+    <figure style="margin:1.6rem 0 1.4rem; overflow-x:auto;">
+      <svg viewBox="0 0 940 640" role="img" aria-labelledby="eco-diagram-title"
+           style="width:100%; min-width:640px; height:auto; display:block;"
+           font-family="'Segoe UI', Arial, sans-serif">
+        <title id="eco-diagram-title">Diagram: a skill gives Claude knowledge and can ship inside a plugin. Connectors and extensions plug MCP servers into Claude, giving it reach into systems like Outlook, SharePoint, and LabTrac.</title>
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6E7378"/>
+          </marker>
+        </defs>
+
+        <!-- zone labels -->
+        <text x="56" y="42" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="12" letter-spacing="3" fill="#B7FF00">KNOWLEDGE</text>
+        <text x="740" y="284" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="12" letter-spacing="3" fill="#B7FF00">REACH</text>
+        <text x="740" y="304" font-size="11" fill="#6E7378">systems Claude</text>
+        <text x="740" y="320" font-size="11" fill="#6E7378">can now touch</text>
+
+        <!-- plugin (dashed shipping box), links to the brand-dcn example -->
+        <a href="access-brand-dcn.html" style="cursor:pointer;">
+          <g>
+            <title>Open: Accessing the brand-dcn Skill and Plugin</title>
+            <rect x="36" y="58" width="264" height="252" rx="12" fill="none"
+                  stroke="#B7FF00" stroke-width="1.5" stroke-dasharray="7 6" opacity="0.75"/>
+            <text x="168" y="262" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+                  font-weight="700" font-size="13" letter-spacing="2" fill="#B7FF00">PLUGIN</text>
+            <text x="168" y="282" text-anchor="middle" font-size="11" fill="#C7CCD1">the shipping box IT publishes to the team</text>
+          </g>
+        </a>
+
+        <!-- skill box, links to the skills page -->
+        <a href="claude-skills.html" style="cursor:pointer;">
+          <g>
+            <title>Open: Claude Skills, What They Are and How to Make One</title>
+            <rect x="56" y="76" width="224" height="90" rx="10" fill="#0A2540"
+                  stroke="#B7FF00" stroke-width="1.5"/>
+            <text x="168" y="108" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+                  font-weight="700" font-size="18" fill="#F8F9FA">SKILL</text>
+            <text x="168" y="130" text-anchor="middle" font-size="11.5" fill="#C7CCD1">saved instructions:</text>
+            <text x="168" y="146" text-anchor="middle" font-size="11.5" fill="#C7CCD1">how to do the job our way</text>
+          </g>
+        </a>
+
+        <!-- second thing a plugin can carry -->
+        <rect x="56" y="184" width="224" height="46" rx="8" fill="#0A2540"
+              stroke="#6E7378" stroke-width="1"/>
+        <text x="168" y="212" text-anchor="middle" font-size="12" fill="#C7CCD1">MCP connection settings</text>
+
+        <!-- Claude -->
+        <rect x="400" y="76" width="200" height="90" rx="12" fill="#0b1520"
+              stroke="#B7FF00" stroke-width="2.5"/>
+        <text x="500" y="115" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="20" fill="#F8F9FA">CLAUDE</text>
+        <text x="500" y="140" text-anchor="middle" font-size="12" fill="#C7CCD1">your AI assistant</text>
+
+        <!-- skill teaches Claude -->
+        <line x1="284" y1="121" x2="392" y2="121" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="338" y="110" text-anchor="middle" font-size="11" fill="#6E7378">teaches how</text>
+
+        <!-- plugin installs for the team -->
+        <path d="M 304 244 C 360 236, 388 200, 416 174" fill="none" stroke="#6E7378"
+              stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="368" y="228" text-anchor="middle" font-size="11" fill="#6E7378">installs for everyone</text>
+
+        <!-- Claude down to the two plug-in routes -->
+        <line x1="460" y1="166" x2="418" y2="234" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="540" y1="166" x2="602" y2="234" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+        <!-- connector, links to the M365 page -->
+        <a href="microsoft-365-connector.html" style="cursor:pointer;">
+          <g>
+            <title>Open: Configuring and Using the Microsoft 365 Connector</title>
+            <rect x="330" y="240" width="165" height="104" rx="10" fill="#0A2540"
+                  stroke="#64CBE8" stroke-width="1.5"/>
+            <text x="412" y="270" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+                  font-weight="700" font-size="15" fill="#F8F9FA">CONNECTOR</text>
+            <text x="412" y="292" text-anchor="middle" font-size="11.5" fill="#C7CCD1">hosted in the cloud,</text>
+            <text x="412" y="308" text-anchor="middle" font-size="11.5" fill="#C7CCD1">switched on in settings</text>
+            <text x="412" y="330" text-anchor="middle" font-size="11" fill="#64CBE8">e.g. Microsoft 365</text>
+          </g>
+        </a>
+
+        <!-- extension -->
+        <rect x="525" y="240" width="165" height="104" rx="10" fill="#0A2540"
+              stroke="#64CBE8" stroke-width="1.5"/>
+        <text x="607" y="270" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="15" fill="#F8F9FA">EXTENSION</text>
+        <text x="607" y="292" text-anchor="middle" font-size="11.5" fill="#C7CCD1">a one-click install,</text>
+        <text x="607" y="308" text-anchor="middle" font-size="11.5" fill="#C7CCD1">runs on your computer</text>
+        <text x="607" y="330" text-anchor="middle" font-size="11" fill="#64CBE8">e.g. Claude Desktop add-ons</text>
+
+        <!-- both are MCP servers underneath -->
+        <line x1="412" y1="344" x2="412" y2="390" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="607" y1="344" x2="607" y2="390" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+        <rect x="330" y="396" width="360" height="84" rx="10" fill="#0b1520"
+              stroke="#64CBE8" stroke-width="1.5"/>
+        <text x="510" y="426" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="16" fill="#F8F9FA">MCP SERVER</text>
+        <text x="510" y="448" text-anchor="middle" font-size="11.5" fill="#C7CCD1">the plumbing: one shared language for tools and data</text>
+        <text x="510" y="466" text-anchor="middle" font-size="10.5" fill="#6E7378">(both boxes above are MCP servers underneath)</text>
+
+        <!-- down to the real systems -->
+        <line x1="430" y1="480" x2="378" y2="524" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="510" y1="480" x2="510" y2="524" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="590" y1="480" x2="648" y2="524" stroke="#6E7378" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+        <rect x="300" y="528" width="140" height="46" rx="8" fill="#0A2540" stroke="#6E7378" stroke-width="1"/>
+        <text x="370" y="556" text-anchor="middle" font-size="12" fill="#C7CCD1">Outlook email</text>
+        <rect x="440" y="528" width="140" height="46" rx="8" fill="#0A2540" stroke="#6E7378" stroke-width="1"/>
+        <text x="510" y="556" text-anchor="middle" font-size="12" fill="#C7CCD1">SharePoint files</text>
+        <rect x="580" y="528" width="150" height="46" rx="8" fill="#0A2540" stroke="#6E7378" stroke-width="1"/>
+        <text x="655" y="556" text-anchor="middle" font-size="12" fill="#C7CCD1">LabTrac (FETCH)</text>
+        <text x="745" y="556" font-size="12" font-style="italic" fill="#6E7378">...and more</text>
+
+        <text x="510" y="612" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="11" letter-spacing="3" fill="#6E7378">YOUR SYSTEMS</text>
+      </svg>
+      <figcaption style="font-size:0.85rem; color:#6E7378; text-align:center; margin-top:0.5rem;">
+        How the pieces stack. The SKILL box, the CONNECTOR box, and the dashed
+        PLUGIN box are clickable and open the matching training page.
+      </figcaption>
+    </figure>
+
     <p>Here is each one in a line:</p>
     <ol>
       <li>

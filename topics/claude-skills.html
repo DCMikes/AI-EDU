@@ -27,7 +27,7 @@
   <div class="page-meta">
     <span>Written July 17, 2026</span>
     <span>Updated July 17, 2026</span>
-    <span>v1.1</span>
+    <span>v1.2</span>
   </div>
 
   <p class="lede">
@@ -63,6 +63,59 @@
       programming involved. If you can write the steps in an email, you can
       write a skill.
     </p>
+
+    <figure style="margin:1.6rem 0 0.4rem; overflow-x:auto;">
+      <svg viewBox="0 0 720 300" role="img" aria-labelledby="skill-anatomy-title"
+           style="width:100%; min-width:420px; height:auto; display:block;"
+           font-family="'Segoe UI', Arial, sans-serif">
+        <title id="skill-anatomy-title">Anatomy of a skill: a folder holding SKILL.md, a plain-language instructions file, plus optional bundled files such as templates, examples, and checklists.</title>
+        <!-- folder -->
+        <rect x="30" y="70" width="300" height="200" rx="12" fill="#0A2540"
+              stroke="#B7FF00" stroke-width="1.5"/>
+        <path d="M 30 82 Q 30 70 42 70 L 120 70 L 140 52 L 210 52 Q 222 52 222 64 L 222 82 Z"
+              fill="#B7FF00" opacity="0.9"/>
+        <text x="52" y="72" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="12" fill="#111111">case-followup/</text>
+        <text x="180" y="112" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="12" letter-spacing="2" fill="#B7FF00">THE SKILL FOLDER</text>
+
+        <!-- SKILL.md -->
+        <rect x="54" y="128" width="252" height="52" rx="8" fill="#0b1520"
+              stroke="#B7FF00" stroke-width="1.5"/>
+        <text x="70" y="150" font-family="Consolas,'Courier New',monospace"
+              font-size="13" font-weight="700" fill="#F8F9FA">SKILL.md</text>
+        <text x="70" y="169" font-size="11" fill="#C7CCD1">the instructions, in plain language</text>
+
+        <!-- bundled files -->
+        <rect x="54" y="190" width="252" height="60" rx="8" fill="#0b1520"
+              stroke="#6E7378" stroke-width="1"/>
+        <text x="70" y="211" font-size="11.5" fill="#C7CCD1">templates.docx &nbsp; example.txt</text>
+        <text x="70" y="230" font-size="11.5" fill="#C7CCD1">checklist.md &nbsp; <tspan fill="#6E7378" font-style="italic">(optional)</tspan></text>
+
+        <!-- arrow -->
+        <line x1="336" y1="170" x2="404" y2="170" stroke="#6E7378" stroke-width="1.5"
+              marker-end="url(#skill-arrow)"/>
+        <defs>
+          <marker id="skill-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6E7378"/>
+          </marker>
+        </defs>
+
+        <!-- Claude loads it -->
+        <rect x="412" y="120" width="278" height="100" rx="12" fill="#0b1520"
+              stroke="#B7FF00" stroke-width="2"/>
+        <text x="551" y="152" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif"
+              font-weight="700" font-size="16" fill="#F8F9FA">CLAUDE</text>
+        <text x="551" y="176" text-anchor="middle" font-size="11.5" fill="#C7CCD1">loads the folder when the</text>
+        <text x="551" y="193" text-anchor="middle" font-size="11.5" fill="#C7CCD1">job comes up, then works</text>
+        <text x="551" y="210" text-anchor="middle" font-size="11.5" fill="#C7CCD1">the way you wrote it down</text>
+      </svg>
+      <figcaption style="font-size:0.85rem; color:#6E7378; text-align:center; margin-top:0.5rem;">
+        A skill is just a folder: one plain-language instructions file, plus any
+        files the job needs. No code.
+      </figcaption>
+    </figure>
   </section>
 
   <p class="section-label">How</p>
