@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Claude Skills: What They Are and How to Make One | Claude Training Hub | Dental Crafters Network</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logos/dcn-color-icon.svg">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="Dental Crafters Network home">
+      <img src="../assets/logos/dcn-color-horizontal-white-text.svg" alt="Dental Crafters Network">
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="kicker">Claude Training</p>
+  <h1>Claude Skills: What They Are and How to Make One</h1>
+  <div class="page-meta">
+    <span>Written July 17, 2026</span>
+    <span>Updated July 17, 2026</span>
+    <span>v1.0</span>
+  </div>
+
+  <p class="lede">
+    A skill is a set of saved instructions, and often some bundled files,
+    that teaches Claude how to do a specific job your way. Instead of
+    re-explaining the same process every time, you write it down once and
+    Claude loads it whenever the job comes up. This page explains what a
+    skill is, how to use the ones we already have, and how to build your own.
+  </p>
+
+  <p class="section-label">Why</p>
+  <section class="whw">
+    <h2>Why you would use this</h2>
+    <p>
+      Think about a task you explain the same way every time: how a case
+      note should be worded, what goes in a weekly report, which template a
+      one-pager starts from. Without a skill, that knowledge lives in your
+      head, and every chat starts from zero. With a skill, the process is
+      written down once, and every person on the team gets the same
+      consistent result from a single short prompt.
+    </p>
+    <p>
+      You already use one every week: <a href="access-brand-dcn.html">brand-dcn</a>
+      is a skill. It bundles our voice rules, colors, logos, and templates,
+      so "write this email" comes out sounding like DCN without you pasting
+      in the brand guide. Any repeatable process at DCN can work the same
+      way: your process, saved once, applied every time.
+    </p>
+    <p>
+      Under the hood a skill is simple: a folder holding a file of plain
+      language instructions (called SKILL.md), plus any reference files the
+      job needs, such as templates, examples, or checklists. There is no
+      programming involved. If you can write the steps in an email, you can
+      write a skill.
+    </p>
+  </section>
+
+  <p class="section-label">How</p>
+  <section class="whw">
+    <h2>How you use one and how you make one</h2>
+    <p><strong>Using a skill</strong></p>
+    <p>
+      Skills activate two ways. You can call one directly by typing a slash
+      and its name, such as <code>/brand-dcn</code>, at the start of your
+      request; that is the surest way to point Claude at it. Or you can just
+      ask in plain language, and Claude activates the matching skill on its
+      own when your request fits the skill's description. To see what you
+      have, ask Claude <em>"what skills do you have available?"</em>
+    </p>
+    <p><strong>Making your own</strong></p>
+    <ol>
+      <li>
+        Pick one repeatable job with a clear right way to do it. Good first
+        skills are narrow: "format my morning production summary," not
+        "help me with everything."
+      </li>
+      <li>
+        Ask Claude to build it with you:
+        <em>"Create a skill called case-followup that drafts follow-up
+        notes for doctors using the steps I give you."</em> Claude has a
+        built-in skill-creator that asks what the job is, writes the
+        SKILL.md file, and saves the folder in the right place.
+      </li>
+      <li>
+        Tell it the process like you would train a new teammate: the steps,
+        the wording rules, what good output looks like, and what to avoid.
+        Attach an example or template if you have one; it gets bundled into
+        the skill folder.
+      </li>
+      <li>
+        Test it in a fresh chat by typing <code>/</code> plus its name with
+        a real task. If something comes out wrong, say so and ask Claude to
+        update the skill; the fix sticks for next time.
+      </li>
+      <li>
+        If the skill would help the whole team, tell IT. We can publish it
+        through our internal catalog the same way brand-dcn reaches
+        everyone automatically.
+      </li>
+    </ol>
+    <p><strong>Where skills live</strong></p>
+    <p>
+      A personal skill sits on your machine and only you see it. A shared
+      skill can be packaged into a plugin and published so the whole team
+      gets it, which is exactly how brand-dcn works today. A follow-up page
+      on this hub covers how skills, plugins, connectors, and MCP servers
+      fit together.
+    </p>
+  </section>
+
+  <p class="section-label">Prompts</p>
+  <section class="whw">
+    <h2>Three prompts to try</h2>
+    <ol>
+      <li>
+        <em>"What skills do you have available right now, and what does
+        each one do?"</em>
+      </li>
+      <li>
+        <em>"Create a skill called meeting-recap that turns my rough notes
+        into a short recap email with action items. I will give you my
+        formatting rules."</em>
+      </li>
+      <li>
+        <em>"Update my meeting-recap skill: action items should always
+        include a name and a due date."</em>
+      </li>
+    </ol>
+    <p>
+      One boundary worth knowing: a skill is instructions, not a
+      connection. It cannot reach systems Claude could not already reach,
+      so it will not pull live data from LabTrac or your email on its own.
+      For that, skills work alongside connectors, which are covered in
+      their own training.
+    </p>
+  </section>
+
+  <div class="callout">
+    Questions or something out of date on this page? Tell IT and we will
+    update it and bump the version.
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Dental Crafters Network, internal training. Shared by link only.</span>
+    <span>Where Every Smile Changes a Life.</span>
+  </div>
+</footer>
+
+</body>
+</html>

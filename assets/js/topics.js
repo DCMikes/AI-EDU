@@ -43,6 +43,19 @@ const TOPICS = [
       "effective, efficient, and safe collaboration with AI tools.",
   },
   {
+    title: "Claude Skills: What They Are and How to Make One",
+    href: "topics/claude-skills.html",
+    external: false,
+    audience: "intermediate",
+    written: "2026-07-17",
+    updated: "2026-07-17",
+    version: "1.0",
+    summary:
+      "A skill is a saved set of instructions that teaches Claude to do a " +
+      "job your way, every time. Covers how skills activate, how to build " +
+      "one by just describing the process, and how to share it with the team.",
+  },
+  {
     title: "Accessing the brand-dcn Skill and Plugin",
     href: "topics/access-brand-dcn.html",
     external: false,
